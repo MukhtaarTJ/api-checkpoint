@@ -4,7 +4,9 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const MONGO_URL = process.env.MONGO_URL;
-const MONGO_URL2 = process.env.MONGO_URL2;
+const MONGO_URL2 = process.env.MONGO_URL2;   
+
+let user;
 
 const mongoConnect = async () => {
   mongoose
